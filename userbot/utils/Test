@@ -1,0 +1,107 @@
+
+
+async def autopilot():
+    from userbot import asst, configs, bot
+
+    if Var.LOG_CHANNEL and str(Var.LOG_CHANNEL).startswith("-100"):
+        udB.set_key("LOG_CHANNEL", Var.LOG_CHANNEL)
+    channel = udB.get_key("LOG_CHANNEL")
+    if channel:
+        try:
+            chat = await bot.get_entity(channel)
+        except BaseException:
+            logging.exception("message")
+            udB.del_key("LOG_CHANNEL")
+            channel = None
+    if not channel:
+        if bot._bot:
+            LOGS.info("'LOG_CHANNEL' not found! Add it in order to use 'BOTMODE'")
+            import sys
+
+            sys.exit()
+        LOGS.info("Creating a Log Channel for You!")
+        try:
+            r = await bot(
+                CreateChannelRequest(
+                    title="My Cilik Logs",
+                    about="Cilik Log Group\n\n Join @CilikSupport",
+                    megagroup=True,
+                ),
+            )
+        except ChannelsTooMuchError:
+            LOGS.info(
+                "You Are in Too Many Channels & Groups , Leave some And Restart The Bot"
+            )
+            import sys
+
+            sys.exit(1)
+        except BaseException as er:
+            LOGS.info(er)
+            LOGS.info(
+                "Something Went Wrong , Create A Group and set its id on config var LOG_CHANNEL."
+            )
+            import sys
+
+            sys.exit(1)
+        chat = r.chats[0]
+        channel = get_peer_id(chat)
+        udB.set_key("LOG_CHANNEL", str(channel))
+    assistant = True
+    try:
+        await bot.get_permissions(int(channel), asst.me.username)
+    except UserNotParticipantError:
+        try:
+            await ultroid_bot(InviteToChannelRequest(int(channel), [asst.me.username]))
+        except BaseException as er:
+            LOGS.info("Error while Adding Assistant to Log Channel")
+            LOGS.exception(er)
+            assistant = False
+    except BaseException as er:
+        assistant = False
+        LOGS.exception(er)
+    if assistant:
+        try:
+            achat = await asst.get_entity(int(channel))
+        except BaseException as er:
+            achat = None
+            LOGS.info("Error while getting Log channel from Assistant")
+            LOGS.exception(er)
+        if achat and not achat.admin_rights:
+            rights = ChatAdminRights(
+                add_admins=True,
+                invite_users=True,
+                change_info=True,
+                ban_users=True,
+                delete_messages=True,
+                pin_messages=True,
+                anonymous=False,
+                manage_call=True,
+            )
+            try:
+                await ultroid_bot(
+                    EditAdminRequest(
+                        int(channel), asst.me.username, rights, "Assistant"
+                    )
+                )
+            except ChatAdminRequiredError:
+                LOGS.info(
+                    "Failed to promote 'Assistant Bot' in 'Log Channel' due to 'Admin Privileges'"
+                )
+            except BaseException as er:
+                LOGS.info("Error while promoting assistant in Log Channel..")
+                LOGS.exception(er)
+    if isinstance(chat.photo, ChatPhotoEmpty):
+        photo = await download_file(
+            "https://telegra.ph/file/27c6812becf6f376cbb10.jpg", "channelphoto.jpg"
+        )
+        ll = await bot.upload_file(photo)
+        try:
+            await bot(
+                EditPhotoRequest(int(channel), InputChatUploadedPhoto(ll))
+            )
+        except BaseException as er:
+            LOGS.exception(er)
+        os.remove(photo)
+
+
+
