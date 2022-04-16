@@ -1,11 +1,11 @@
 FROM greycilik/cilikuserbot:buster
 
-RUN git clone -b Cilik-Userbot https://github.com/grey423/CilikUserbot /home/cilikuserbot/ \
-    && chmod 777 /home/cilikuserbot \
-    && mkdir /home/cilikuserbot/bin/
+RUN git clone -b Bagaskara-Userbot https://github.com/ybgskr12/Bagaskara-Userbot2 /home/bagaskarauserbot/ \
+    && chmod 777 /home/bagaskarauserbot \
+    && mkdir /home/bagaskarauserbot/bin/
 
-COPY ./sample_config.env ./config.env* /home/cilikuserbot/
+COPY ./sample_config.env ./config.env* /home/bagaskarauserbot/
 
-WORKDIR /home/cilikuserbot/
+WORKDIR /home/bagaskarauserbot/
 
 CMD ["python3", "-m", "userbot"]
