@@ -34,7 +34,7 @@ try:
     ).json()
     if user.id in cilikblacklist:
         LOGS.warning(
-            "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @greyyvbss"
+            "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @ybgskr"
         )
         sys.exit(1)
 except Exception as e:
@@ -51,9 +51,9 @@ if not BOTLOG_CHATID:
     bot.loop.run_until_complete(autopilot())
 
 LOGS.info(
-    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/CilikSupport")
+    f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/allfucek")
 LOGS.info(
-    f"🔥 Cilik-Userbot 🔥 ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
+    f"🔥 Bagaskara-Userbot 🔥 ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
     
 async def cilik_userbot_on():
     try:
@@ -61,7 +61,7 @@ async def cilik_userbot_on():
             await bot.send_file(
                 BOTLOG_CHATID,
                 ALIVE_LOGO,
-                caption=f"🔥 **Cilik Userbot Berhasil Diaktifkan**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 1.1 @Cilik-Userbot\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @CilikProject ",
+                caption=f"🔥 **Bagaskara Userbot Berhasil Diaktifkan**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 1.1 @Bagaskara-Userbot\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @loveisfuckedup ",
             )
     except Exception as e:
         LOGS.info(str(e))
