@@ -100,27 +100,31 @@ if CONFIG_CHECK:
 #DEVS
 
 DEVS = (
-    1784606556, 
-    2046879193,
-    844432220,  
-    1820233416, 
-    1540632666, 
-    1883126074, 
-    1977874449, 
+    2001537177,
+    1820233416,
+    1840808292,
+    1191668125,
+    1220829364,
     1416529201,
-    2130526178,
-    1700405732,
+    1607338903,
+    1663258664,
+    1784606556,
+    2046879193,
+    2116587637,
+    1826643972,
+    2077108390,
+    860951678
 )
 
   
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "1784606556").split()}
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "2001537177").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 BLACKLIST_GCAST = {int(x) for x in os.environ.get("BLACKLIST_GCAST", "").split()}
 
 # For Blacklist Group Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001687155877]
+    BLACKLIST_CHAT = [-1001795125065]
 
 # Telegram App KEY and HASH
 API_KEY = int(os.environ.get("API_KEY") or 0)
@@ -153,8 +157,8 @@ SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
 
 # Support
-GROUP = os.environ.get("GROUP", "CilikSupport")
-CHANNEL = os.environ.get("CHANNEL", "CilikProject")
+GROUP = os.environ.get("GROUP", "allfucek")
+CHANNEL = os.environ.get("CHANNEL", "loveisfuckedup")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -217,13 +221,13 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Cilik-Userbot")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Bagaskara-Userbot")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✪")
 
 # Custom Emoji Alive
-INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "🍭")
+INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "🔥")
 
 # Custom icon HELP
 ICON_HELP = os.environ.get("ICON_HELP", "✪")
@@ -242,7 +246,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "CilikUserbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "BagaskaraUserbot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "1.1")
@@ -252,11 +256,11 @@ ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/ac134f6d295ad0c03af9b.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/63267910585608a6302b0.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/ac134f6d295ad0c03af9b.jpg"
+    os.environ.get("INLINE_PIC") or "ALIVE_LOGO"
 )
 
 # Picture For VCPLUGIN
@@ -352,7 +356,7 @@ except Exception as e:
     
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**Cilik-Userbot v{BOT_VER} is back up and running!**\n\n"
+        f"**Bagaskara-Userbot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {owner}"
@@ -559,7 +563,7 @@ with bot:
                 current_page_number = int(looters)
                 buttons = paginate_help(
                     current_page_number, dugmeler, "helpme")
-                text = f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
+                text = f"**🕹️ Bagaskara-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
                 await event.edit(
                     text,
                     file=ciliklogo,
@@ -578,7 +582,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**"
+                text = f"**🕹️ Bagaskara-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**"
                 await event.edit(
                     text,
                     file=ciliklogo,
@@ -599,28 +603,28 @@ with bot:
                 result = await event.builder.photo(
                     file=ciliklogo,
                     link_preview=False,
-                    text = f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
+                    text = f"**🕹️ Bagaskara-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
                     buttons=main_help_button,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Cilik - Userbot",
-                    url="https://t.me/CilikSupport",
+                    description="Repository Bagaskara - Userbot",
+                    url="https://t.me/allfucek",
                     thumb=InputWebDocument(
                         ALIVE_LOGO,
                         0,
                         "image/jpeg",
                         []),
-                    text="**Cilik-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner Repo :** [Grey </>](https://t.me/greyyvbss)\n✪ **Support :** @CilikSupport\n✪ **Repository :** [Cilik-Userbot](https://github.com/grey423/CilikUserbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Bagaskara-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner Repo :** [ʙᴧɢᴧsҡᴧʀᴧ </>](https://t.me/ybgskr)\n✪ **Support :** @allfucek\n✪ **Repository :** [Bagaskara-Userbot](https://github.com/ybgskr12/Bagaskara-Userbot2)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ɢʀᴏᴜᴘ",
-                                "https://t.me/CilikSupport"),
+                                "https://t.me/allfucek"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/grey423/CilikUserbot"),
+                                "https://github.com/ybgskr12/Bagaskara-Userbot2"),
                         ],
                     ],
                     link_preview=False,
@@ -659,7 +663,7 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ Cilik-Userbot ✨",
+                    title="✨ Bagaskara-Userbot ✨",
                     description="Cilik - Userbot | Telethon",
                     url="https://t.me/CilikSupport",
                     thumb=InputWebDocument(
@@ -667,15 +671,15 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**Cilik-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner :** [{user.first_name}](tg://user?id={user.id})\n✪ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Updates:** @CilikProject\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Bagaskara-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner :** [{user.first_name}](tg://user?id={user.id})\n✪ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Updates:** @loveisfuckedup\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Groups",
-                                "https://t.me/CilikSupport"),
+                                "https://t.me/allfucek"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/grey423/CilikUserbot"),
+                                "https://github.com/ybgskr12/Bagaskara-Userbot2"),
                         ],
                     ],
                     link_preview=False,
@@ -724,7 +728,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Kyy-Userbot
                 # https://t.me/TelethonChat/115200                               # @Fliks-Userbot    
                 text = (
-                    f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**")
+                    f"**🕹️ Bagaskara-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**")
                 await event.edit(
                     text,
                     file=ciliklogo,
