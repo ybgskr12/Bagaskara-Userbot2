@@ -1,5 +1,5 @@
 # Ported by @mrismanaziz
-# ReCode by @greyyvbss
+# ReCode by @ybgskr
 
 import random
 import asyncio
@@ -12,20 +12,20 @@ from userbot.events import register
 from userbot.utils import edit_or_reply, humanbytes, cilik_cmd
 
 absen = [
-    "**Hadir bang grey** 😁",
-    "**Hadir kak** 😉",
+    "**Hadir bang Bagas** 😁",
+    "**Hadir kak Bagas** 😉",
     "**Hadir dong** 😁",
-    "**Hadir grey ganteng** 🥵",
-    "**Hadir bro** 😎",
-    "**Hadir kak maap telat** 🥺",
+    "**Hadir Bagas ganteng** 🥵",
+    "**Hadir Lord** 😎",
+    "**Hadir kak Bagas maap telat** 🥺",
 ]
 
-salam = [
+mikum = [
     "**Wa'alaikumsalam ganteng** 🥰🥰",
     "**Wa'alaikumsalam WR WB** 👋🏻",
     "**Iyah Waalaikusalam** 🥵",
     "**Wa'alaikumsalam bang Grey**",
-    "**Wa'alaikumsalam** 🥰",
+    "**Wa'alaikumsalam Sayang** 🥰",
     "**Wa'alaikumsalan Warohmatullohi Wabarokatu**",
     "**Wa'alaikumsalam Ustad**",
     
@@ -33,17 +33,18 @@ salam = [
 
 pacar = [
     "**Kamu mau jadi pacar aku ga?** 💘",
-    "**Memek mending sama aku** 😎",
-    "**Hai ganteng** 🐷",
-    "**Mau ga bang jadi pacar aku?** 😁",
+    "**Djancok mending sama aku** 😎",
+    "**Hai Bagas ganteng** 😚",
+    "**Mau ga bang bagas jadi pacar aku?** 😁",
     "**Mending pc aku bang** 🥺",
     "**Main Sama Aku yuk**🥵🥵💦",
-    "**Grey Mau Aku Cium Ga??**🥵",
-    "**Grey I Love You**",
-    "**Grey Aku Sayang Kamu ,Mwahhh😘**",
+    "**Bagas Mau Aku Cium Ga??**🥵",
+    "**I Love You Bagaskara**",
+    "**Aku Sayang Kamu Bagas,Mwahhh😘**",
+    "**Aaaa Ngepens Banget Sama Bang Bagas**😚",
 ]
 
-roas = [
+bacot = [
     "**DUH GINI NIH BOCAH YG LAHIR DI GUBUK BAMBU REOT + GAPUNYA HARGA DIRI, PADAHAL MAH DARI KECIL DIAJARIN SM EMAKNYA GABOLEH SONGONG SM MAJIKAN MASIH AJA SONGONG, MENDING LO URUSIN DULU GOBLOK KELUARGA LO YG PENYAKITAN ITU, MANA BAPA LO KAKINYA BOROK BEGITU AJG BERNANAH BAU AMIS IDIH GELI BET GELI GUA LIATNYA, NAH SEKALIAN TUH URUSIN JUGA ADE LO TUH, KALO BUKAN KARENA GUA MAH ADE LO UDAH MENINGGAL KENA TUMOR TOLOL MAKANYA LO KUDU SUJUD DEPAN GUA YAKAN,EMAK LO JUGA TUH JAGAIN UDAH BISU BEGITU YAKAN TAKUTNYA JATOH GABISA TREAK, MAKANYA NIH YA JANGAN KEBANYAKAN KONSUMSI SASA MICIN GOBLOK LIAT KAN EFEKNYA LO JADI KEK BOCAH AYAN BEGITU, SAMPE² LO BERANI GITU YAKAN NYENGGET JEMURAN ORANG SAMPE LO DIPUKULIN TRUS DI INJEK² SAMA WARGA SEKAMPUNGAN, GINI YA GUA KASIH TAU NIH SAMA LO NIH KALO UDA MISKIN KAGA USAH BELAGU SEGALA TOLOL, MIKIR LO MAKAN AJA SUSAH SAMPE NGEMIS² DI KOMPLEK PERUMAHAN GUA SAMPE DI USIR SAMA SATPAM KOMPLEK GUA, BERAS AJA LO BOLEH DIBAGI SAMA EMAK GUA YAKAN LAUK PAUK IKAN, AYAM, DAGING SEGALA RUPA AJA LO BOLEH NYOLONG DARI PASAR BOCAH KAYA LO MAH GIZINYA KURANG DONGO SABAN HARI MAKAN INDOMI 1 PAKE TELOR DOANG ITU JUGA JOINAN SM KELUARGA LU, KARENA APA?, YA KARENA LO MISKIN GA MAMPU BELI MAKANAN YG BERGIZI, DIKASIH KUAH SAYUR KANGKUNG JUGA MAO TOLOL ITU JUGA UDAH BERSYUKUR BISA MAKAN MAKANAN SELAEN MI INSTAN YAKAN SECARA LO GABISA GITU KEK GUA YAKAN MAKAN APA YG GUA MAO LAH ELO MAKAN MAKANAN TONG SAMPAH JUGA UDAH ALHAMDULILLAH BANGET AJG**",
     "**BUAT LO KONTOL NIH KALO UDAH HINA GAUSAH SOK SOK NGEHINA HINA GUA KONTOL, GUA TERLALU SUCI BUAT LU YANG HINA ITU ADUHHH. SINI GUA LUDAHIN DLU LU BIAR DIRI LU SUCI KARENA LU TAU LUDAH GUA ITU MULIA SEKALI**",
     "**PUNYA EMAK JANGAN JELEK GUE TAU EMAK LO UDAH MUKA JELEK ITEM BAT ITEM KEK OLI MOTOR BELOM DI GANTI SETAHUN HAHA TERUS BADANNYA GENDUT BAT GENDUT TETENYA KONDOR LAGI PANTESAN AJA KAGA LAKU HAHAHA NIH GUA KASIH TAU YE SAMA LO BOKAP LO AJE KERJAANNYA MAEN JUDI MULU BORO BORO MENANG BOKAP LO AJE MAEN JUDI KALAH MULU TOLOL HAHA UDAH NGUTANG SANA SINI AMPE DI KEJAR DEB COLLECTOR ITU BOKAP LO LAGI DI BURU OLEH DEP COLECTOR MANGKANYA KALO UDAH TAU MISKIN KERJAANNYA JANGAN MAEN JUDI MULU TOLOL SAMA NGUTANG CARI KERJA YANG HALAL SONO HAHA**",
@@ -192,7 +193,7 @@ async def _(pong):
     xx = await edit_or_reply(pong, "`Gass!`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await xx.edit("🏓 **Ping!**\n`%sms`" % (duration))
+    await xx.edit("😚 **Black Pink! 😚**\n`%sms`" % (duration))
 
 
 # KALO NGEFORK absen ini GA USAH DI HAPUS YA GOBLOK 😡
@@ -201,19 +202,19 @@ async def grey(ganteng):
     await ganteng.reply(random.choice(absen))
 
 
-@register(incoming=True, from_users=1784606556, pattern=r"^P$")
+@register(incoming=True, from_users=1784606556, pattern=r"^.phe$")
 async def grey(ganteng):
     await ganteng.reply(random.choice(salam))
 
 
-@register(incoming=True, from_users=1784606556, pattern=r"^.grey$")
+@register(incoming=True, from_users=1784606556, pattern=r"^.ayangg$")
 async def grey(ganteng):
     await ganteng.reply(random.choice(pacar))
 
 
-@register(incoming=True, from_users=1784606556, pattern=r"^.roasting$")
+@register(incoming=True, from_users=1784606556, pattern=r"^.bacot$")
 async def grey(ganteng):
-    await ganteng.reply(random.choice(roas))
+    await ganteng.reply(random.choice(bacot))
 
 
 @cilik_cmd(pattern="pung(?: |$)(.*)")
