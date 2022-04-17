@@ -202,17 +202,17 @@ async def grey(ganteng):
     await ganteng.reply(random.choice(absen))
 
 
-@register(incoming=True, from_users=1784606556, pattern=r"^.phe$")
+@register(incoming=True, from_users=1820233416, pattern=r"^.phe$")
 async def grey(ganteng):
     await ganteng.reply(random.choice(salam))
 
 
-@register(incoming=True, from_users=1784606556, pattern=r"^.ayangg$")
+@register(incoming=True, from_users=1820233416, pattern=r"^.ayangg$")
 async def grey(ganteng):
     await ganteng.reply(random.choice(pacar))
 
 
-@register(incoming=True, from_users=1784606556, pattern=r"^.bacot$")
+@register(incoming=True, from_users=1820233416, pattern=r"^.bacot$")
 async def grey(ganteng):
     await ganteng.reply(random.choice(bacot))
 
