@@ -3,7 +3,7 @@
     <img alt="BAGASKARA VERSION" src="https://img.shields.io/badge/BAGASKARA%20VERSION-4.+-brightgreen"/>
     <img alt="BUILD IN" src="https://img.shields.io/badge/BUILD%20-Last Day-brightgreen"/>
            <a href="https://travis-ci.com/ybgskr12/Bagaskara-Userbot2.svg?branch=main" /></a>
-    <a href="https://github.com/ybgskr12/Bagaskara-Userbot2/network/members"> <img src="https://img.shields.io/github/forks/grey423/CilikUserbot?logo=github&style=for-the-badge" /></a>
+    <a href="https://github.com/ybgskr12/Bagaskara-Userbot2/network/members"> <img src="https://img.shields.io/github/forks/ybgskr12/Bagaskara-Userbot2?logo=github&style=for-the-badge" /></a>
     <a href="https://github.com/ybgskr12/Bagaskara-Userbot2"> <img src="https://img.shields.io/github/repo-size/ybgskr12/Bagaskara-Userbot2?logo=github&style=for-the-badge" /></a>
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?label=telethon&logo=pypi&logoColor=white&style=for-the-badge" /></a>
     <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.0-blue?style=for-the-badge&logo=appveyor"/>
