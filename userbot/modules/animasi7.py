@@ -1,4 +1,4 @@
-#greyyvbss 
+#ybgskr 
 
 import asyncio
 
@@ -7,25 +7,25 @@ from userbot import CMD_HELP
 from userbot.utils import edit_or_reply, cilik_cmd 
   
   
-@cilik_cmd(pattern="cilik(?: |$)(.*)")
+@cilik_cmd(pattern="bagaskara(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
     animation_interval = 0.5
     animation_ttl = range(11)
-    event = await edit_or_reply(event, "Cilik-Userbot....")
+    event = await edit_or_reply(event, "Bagaskara-Userbot....")
     animation_chars = [
-        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**CILIK-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
-        "✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n✨✪✨..**CILIK-USERBOT**..✨✪✨\n✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n",
-        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**CILIK-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
-        "✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n✨✪✨..**CILIK-USERBOT**..✨✪✨\n✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n",
-        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**CILIK-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
-        "✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n✨✪✨..**CILIK-USERBOT**..✨✪✨\n✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n",
-        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**CILIK-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
-        "✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n✨✪✨..**CILIK-USERBOT**..✨✪✨\n✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n",
-        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**CILIK-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
-        "✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n✨✪✨..**CILIK-USERBOT**..✨✪✨\n✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n",
-        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**CILIK-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
+        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**BAGASKARA-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
+        "✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n✨✪✨..**BAGASKARA-USERBOT**..✨✪✨\n✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n",
+        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**BAGASKARA-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
+        "✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n✨✪✨..**BAGASKARA-USERBOT**..✨✪✨\n✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n",
+        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**BAGASKARA-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
+        "✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n✨✪✨..**BAGASKARA-USERBOT**..✨✪✨\n✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n",
+        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**BAGASKARA-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
+        "✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n✨✪✨..**BAGASKARA-USERBOT**..✨✪✨\n✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n",
+        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**BAGASKARA-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
+        "✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n✨✪✨..**BAGASKARA-USERBOT**..✨✪✨\n✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n",
+        "✨✪✨✪✨✪✨✪✨✪✨\n✪✨✪✨✪✨✪✨✪✨✪\n✪✨✪..**BAGASKARA-USERBOT**..✪✨✪\n✪✨✪✨✪✨✪✨✪✨✪\n✨✪✨✪✨✪✨✪✨✪✨\n",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
@@ -105,8 +105,8 @@ async def _(event):
 CMD_HELP.update(
     {
         "animasi7": f"➢ **Plugin : **`animasi7`\
-        \n\n ┌✪ **Syntax :** `{cmd}cilik`\
-        \n └✪ **Function : **Animasi Cilik Userbot.\
+        \n\n ┌✪ **Syntax :** `{cmd}bagaskara`\
+        \n └✪ **Function : **Animasi Bagaskara-Userbot.\
         \n\n ┌✪ **Syntax :** `{cmd}city`\
         \n └✪ **Function : **Mengirim Gambar Kota.\
         \n\n ┌✪ **Syntax :** `{cmd}plane`\
