@@ -475,7 +475,7 @@ with bot:
                 Button.inline("VC-Plugin 📺", data="cilik_inline"),
             ],
             [
-                Button.url("📣 Updates", f"https://t.me/CilikProject"),
+                Button.url("📣 Updates", f"https://t.me/loveisfuckedup"),
                 Button.url("Settings 🛠️ ", f"t.me/{botusername}"),
             ],
             [Button.inline("🗑️ Close", data="close")],
@@ -664,8 +664,8 @@ with bot:
             else:
                 result = builder.article(
                     title="✨ Bagaskara-Userbot ✨",
-                    description="Cilik - Userbot | Telethon",
-                    url="https://t.me/CilikSupport",
+                    description="Bagaskara - Userbot | Telethon",
+                    url="https://t.me/allfucek",
                     thumb=InputWebDocument(
                         ALIVE_LOGO,
                         0,
