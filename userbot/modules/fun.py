@@ -14,7 +14,7 @@ from userbot import CMD_HELP
 from userbot.utils import bash, edit_or_reply, cilik_cmd, progress
 
 
-@cilik_cmd(pattern="honka(?: |$)(.*)")
+@cilik_cmd(pattern="frog(?: |$)(.*)")
 async def frg(animu):
     text = animu.pattern_match.group(1)
     xx = await edit_or_reply(animu, "`Processing...`")
@@ -86,8 +86,8 @@ CMD_HELP.update(
         "fun": f"**➢ Plugin : **`fun`\
         \n\n ┌✪ **Syntax :** `{cmd}rst` <text>\
         \n └✪ **Function : **Untuk membuat stiker teks dengan templat stiker acak.\
-        \n\n ┌✪ **Syntax :** `{cmd}honka` <text>\
-        \n └✪ **Function : **Untuk membuat stiker teks dengan templat stiker Honka bot.\
+        \n\n ┌✪ **Syntax :** `{cmd}frog` <text>\
+        \n └✪ **Function : **Untuk membuat stiker teks dengan tampilan stiker badut kodok.\
     "
     }
 )
