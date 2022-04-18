@@ -170,7 +170,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f"**[Cilik-Userbot](https://github.com/grey423/CilikUserbot) is Up and Running.**\n\n"
+        f"**[Bagaskara-Userbot](https://github.com/ybgskr12/Bagaskara-Userbot2) is Up and Running.**\n\n"
         f"**{alive_text}**\n\n"
         f"{emoji} **Master :** [{user.first_name}](tg://user?id={user.id}) \n"
         f"{emoji} **Module :** `{len(modules)} Modules` \n"
