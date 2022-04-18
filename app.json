@@ -1,9 +1,9 @@
 {
-  "name": "Cilik-Userbot",
-  "description": "[Cilik-Userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
-  "logo": "https://telegra.ph/file/ac134f6d295ad0c03af9b.jpg",
-  "keywords": ["telegram", "userbot", "cilik-userbot", "modular", "python"],
-  "repository": "https://github.com/grey423/Cilik-Userbot",
+  "name": "Bagaskara-Userbot",
+  "description": "[Bagaskara-Userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
+  "logo": "https://telegra.ph/file/63267910585608a6302b0.jpg",
+  "keywords": ["telegram", "userbot", "Bagaskara-Userbot", "modular", "python"],
+  "repository": "https://github.com/ybgskr12/Bagaskara-Userbot",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -15,7 +15,7 @@
       "required": true 
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di Grup » https://t.me/CilikSupport » Lalu ketik #string",
+      "description": "Dapatkan String Session di Grup » https://t.me/allfucek » Lalu ketik #string",
       "required": true
     },
     "HEROKU_APP_NAME": {
