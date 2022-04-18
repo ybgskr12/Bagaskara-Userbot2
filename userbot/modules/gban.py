@@ -1,5 +1,5 @@
 # Credits: @mrismanaziz
-# Recode by @greyyvbss
+# Recode by @ybgskr
 
 from telethon.events import ChatAction
 
@@ -41,8 +41,8 @@ async def handler(tele):
                         return
 
 
-@cilik_cmd(pattern="gband(?: |$)(.*)")
-@register(pattern=r"^\.cgband(?: |$)(.*)", sudo=True)
+@cilik_cmd(pattern="gban(?: |$)(.*)")
+@register(pattern=r"^\.cgban(?: |$)(.*)", sudo=True)
 async def gben(userbot):
     dc = userbot
     sender = await dc.get_sender()
@@ -50,7 +50,7 @@ async def gben(userbot):
     if sender.id != me.id:
         dark = await dc.reply("`Gbanning...`")
     else:
-        dark = await dc.edit("`Memproses Global Banned Jamet Tele..`")
+        dark = await dc.edit("`Mampus Gw Banned Lu Anjingg..`")
     me = await userbot.client.get_me()
     await dark.edit("`Global Banned Akan Segera Aktif..`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
@@ -109,8 +109,8 @@ async def gben(userbot):
         f"**Action:** `Global Banned by {owner}`"
     )
 
-@cilik_cmd(pattern=r"ungband(?: |$)(.*)")
-@register(pattern=r"^\.cungband(?: |$)(.*)", sudo=True)
+@cilik_cmd(pattern=r"ungban(?: |$)(.*)")
+@register(pattern=r"^\.cungban(?: |$)(.*)", sudo=True)
 async def gunben(userbot):
     dc = userbot
     sender = await dc.get_sender()
@@ -139,7 +139,7 @@ async def gunben(userbot):
     if user:
         if user.id in DEVS:
             return await dark.edit(
-                "**Grey Tidak Bisa Terkena Perintah Ini, Karna Dia Pembuat saya**"
+                "**Bagaskara Tidak Bisa Terkena Perintah Ini, Karna Dia Pembuat saya**"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
