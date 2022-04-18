@@ -697,7 +697,7 @@ async def bot_start(event):
                         \n\n**Saya adalah {my_first}** \
                         \n**Anda dapat menghubungi [{OWNER}](tg://user?id={OWNER_ID}) dari sini.**\
                         \n**Jangan melakukan spam atau anda akan di Banned**\
-                        \n\n**Powered** by [UserBot](https://github.com/grey423/CilikUserbot)"
+                        \n\n**Powered** by [UserBot](https://github.com/ybgskr12/Bagaskara-Userbot2)"
         buttons = [
             (
                 Button.url("ɢʀᴏᴜᴘ", f"https://t.me/{GROUP}"),
