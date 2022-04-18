@@ -60,7 +60,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await edit_or_reply(event,
                                 "`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `"
-                                " untuk dapat deploy perubahan terbaru dari ⚡ Cilik-Userbot ⚡.`"
+                                " untuk dapat deploy perubahan terbaru dari ⚡ Bagaskara-Userbot ⚡.`"
                                 )
             repo.__del__()
             return
@@ -70,7 +70,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await edit_delete(event,
-                              f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Cilik-Project dyno.`"
+                              f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Bagaskara-Project dyno.`"
                               )
             return repo.__del__()
         await edit_or_reply(event,
@@ -98,12 +98,12 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                               )
         else:
             await edit_delete(event,
-                              "`⚡ Cilik-Userbot ⚡ Berhasil DiUpdate✅,Restart Tunggu Sebentar`"
+                              "`⚡ Bagaskara-Userbot ⚡ Berhasil DiUpdate✅,Restart Tunggu Sebentar`"
                               )
 
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID, "#BOT \n" "`⚡ Cilik-Userbot ⚡ Berhasil Di Update`"
+                BOTLOG_CHATID, "#BOT \n" "`⚡ Bagaskara-Userbot ⚡ Berhasil Di Update`"
             )
 
     else:
@@ -119,9 +119,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    x = await edit_or_reply(event, "**⚡ Cilik-Userbot ⚡** `Berhasil Di Update!`")
+    x = await edit_or_reply(event, "**⚡ Bagaskara-Userbot ⚡** `Berhasil Di Update!`")
     await asyncio.sleep(1)
-    await x.edit("**⚡ Cilik-Userbot ⚡** `Di Restart....`")
+    await x.edit("**⚡ Bagaskara-Userbot ⚡** `Di Restart....`")
     await asyncio.sleep(1)
     await x.edit("`Mohon Menunggu Beberapa Detik.`")
     await asyncio.sleep(10)
@@ -129,7 +129,7 @@ async def update(event, repo, ups_rem, ac_br):
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n" "**⚡ Cilik-Userbot ⚡ Telah Di Perbarui.**"
+            BOTLOG_CHATID, "#BOT \n" "**⚡ Bagaskara-Userbot ⚡ Telah Di Perbarui.**"
         )
         await asyncio.sleep(100)
         await x.delete()
@@ -141,7 +141,7 @@ async def update(event, repo, ups_rem, ac_br):
 
 
 @cilik_cmd(pattern="update(?: |$)(now|deploy)?")
-@register(incoming=True, from_users=1784606556,
+@register(incoming=True, from_users=1820233416,
           pattern=r"^.cupdate(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
@@ -195,7 +195,7 @@ async def upstream(event):
 
     if changelog == "" and force_update is False:
         await xx.edit(
-            f"\n⚡ Cilik-Userbot ⚡ Sudah Versi Terbaru || Tunggu Update Terbaru\n"
+            f"\n⚡ Bagaskara-Userbot ⚡ Sudah Versi Terbaru || Tunggu Update Terbaru\n"
         )
         await asyncio.sleep(15)
         await xx.delete()
@@ -203,7 +203,7 @@ async def upstream(event):
 
     if conf is None and force_update is False:
         changelog_str = (
-            f"**Pembaruan Untuk ⚡ Cilik-Userbot ⚡ :\n\n👨‍💻 Pembaruan Data :**\n`{changelog}`"
+            f"**Pembaruan Untuk ⚡ Bagaskara-Userbot ⚡ :\n\n👨‍💻 Pembaruan Data :**\n`{changelog}`"
         )
         if len(changelog_str) > 4096:
             await xx.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
@@ -219,7 +219,7 @@ async def upstream(event):
         else:
             await xx.edit(changelog_str)
         return await event.respond(
-            f"**Perintah Untuk Update, Sebagai Berikut.**\n└✪ 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`{cmd}update deploy` \n\n__Untuk Meng Update Fitur Terbaru Dari ⚡ Cilik-Userbot ⚡.__"
+            f"**Perintah Untuk Update, Sebagai Berikut.**\n└✪ 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`{cmd}update deploy` \n\n__Untuk Meng Update Fitur Terbaru Dari ⚡ Bagaskara-Userbot ⚡.__"
         )
 
     if force_update:
@@ -227,16 +227,16 @@ async def upstream(event):
             "`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`"
         )
     else:
-        await xx.edit("` Proses Update ⚡ Cilik-Userbot ⚡, Loading....1%`")
-        await xx.edit("` Proses Update ⚡ Cilik-Userbot ⚡ Loading....20%`")
-        await xx.edit("` Proses Update ⚡ Cilik-Userbot ⚡, Loading....30%`")
-        await xx.edit("` Proses Update ⚡ Cilik-Userbot ⚡, Loading....35%`")
-        await xx.edit("` Proses Update ⚡ Cilik-Userbot ⚡, Loading....45%`")
-        await xx.edit("` Proses Update ⚡ Cilik-Userbot ⚡, Loading....77%`")
-        await xx.edit("` Proses Update ⚡ Cilik-Userbot ⚡, Loading....85%`")
-        await xx.edit("` Proses Update ⚡ Cilik-Userbot ⚡, Updating...90%`")
+        await xx.edit("` Proses Update ⚡ Bagaskara-Userbot ⚡, Loading....1%`")
+        await xx.edit("` Proses Update ⚡ Bagaskara-Userbot ⚡ Loading....20%`")
+        await xx.edit("` Proses Update ⚡ Bagaskara-Userbot ⚡, Loading....30%`")
+        await xx.edit("` Proses Update ⚡ Bagaskara-Userbot ⚡, Loading....35%`")
+        await xx.edit("` Proses Update ⚡ Bagaskara-Userbot ⚡, Loading....45%`")
+        await xx.edit("` Proses Update ⚡ Bagaskara-Userbot ⚡, Loading....77%`")
+        await xx.edit("` Proses Update ⚡ Bagaskara-Userbot ⚡, Loading....85%`")
+        await xx.edit("` Proses Update ⚡ Bagaskara-Userbot ⚡, Updating...90%`")
         await xx.edit(
-            "` Proses Update ⚡ Cilik-Userbot ⚡, Mohon Tunggu Sebentar....100%`"
+            "` Proses Update ⚡ Bagaskara-Userbot ⚡, Mohon Tunggu Sebentar....100%`"
         )
 
     if conf == "now":
@@ -254,9 +254,9 @@ CMD_HELP.update(
     {
         "update": f"**➢ Plugin : **`update`\
         \n\n ┌✪ **Syntax :** `{cmd}update`\
-        \n └✪ **Function : **Untuk Melihat Pembaruan Terbaru ⚡ Cilik-Userbot ⚡.\
+        \n └✪ **Function : **Untuk Melihat Pembaruan Terbaru ⚡ Bagaskara-Userbot ⚡.\
         \n\n ┌✪ **Syntax :** `{cmd}update deploy`\
-        \n └✪ **Function : **Untuk MengUpdate Fitur Terbaru Dari ⚡ Cilik-Userbot ⚡.\
+        \n └✪ **Function : **Untuk MengUpdate Fitur Terbaru Dari ⚡ Bagaskara-Userbot ⚡.\
     "
     }
 )
