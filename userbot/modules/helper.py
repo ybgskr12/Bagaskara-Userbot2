@@ -9,10 +9,10 @@ async def usit(event):
     await edit_or_reply(
         event,
         f"**Hai {owner} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.help` Atau Bisa Minta Bantuan Ke:\n"
-        f"★ **GroupSupport :** [Grup Support](t.me/CilikSupport)\n"
-        f"★ **Channel :** [Channel](t.me/CilikProject)\n"
-        f"★ **OwnerRepo :** [Grey Ganteng](t.me/greyyvbss)\n"
-        f"★ **Repo :** [CilikUserbot](https://github.com/grey423/CilikUserbot)\n",
+        f"★ **GroupSupport :** [Grup Support](t.me/allfucek )\n"
+        f"★ **Channel :** [Channel](t.me/loveisfuckedup )\n"
+        f"★ **OwnerRepo :** [ʙᴧɢᴧsҡᴧʀᴧ](t.me/ybgskr)\n"
+        f"★ **Repo :** [Bagaskara-Userbot](https://github.com/ybgskr12/Bagaskara-Userbot2)\n",
     )
 
 
@@ -20,7 +20,15 @@ async def usit(event):
 async def var(event):
     await edit_or_reply(
         event,
-        "**Daftar Lengkap Vars Dari CilikUserbot:** [KLIK DISINI](https://telegra.ph/List-Variabel-Heroku-untuk-Man-Userbot-09-22)",
+        "**Daftar Lengkap Vars Dari Bagaskara-Userbot:** [KLIK DISINI](https://telegra.ph/List-Variabel-Heroku-untuk-Man-Userbot-09-22)",
+    )
+    
+    
+    @cilik_cmd(pattern="string$")
+async def var(event):
+    await edit_or_reply(
+        event,
+        "**AMBIL STRING LEWAT BAGASKARA-STRING BOT:** [KLIK DISINI](https://t.me/string_bagasbot)",
     )
 
 
@@ -32,9 +40,9 @@ CMD_HELP.update(
         \n\n  •  **Syntax :** `{cmd}listvar`\
         \n  •  **Function : **Melihat Daftar Vars.\
         \n\n  •  **Syntax :** `{cmd}repo`\
-        \n  •  **Function : **Melihat Repository Cilik-Userbot.\
+        \n  •  **Function : **Melihat Repository Bagaskara-Userbot.\
         \n\n  •  **Syntax :** `{cmd}string`\
-        \n  •  **Function : **Link untuk mengambil String Cilik-Userbot.\
+        \n  •  **Function : **Link untuk mengambil String Bagaskara-Userbot.\
     "
     }
 )
