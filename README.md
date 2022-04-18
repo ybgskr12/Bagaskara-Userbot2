@@ -34,7 +34,7 @@ src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-blue?style=flat&log
 
 ## DEPLOY TO BOT HEROKU DI TELEGRAM ❤️
  
-<p align="center"><a href="https://ybgskr12/Bagaskara-Userbot2"> <img 
+<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=eWJnc2tyMTIvQmFnYXNrYXJhLVVzZXJib3QyIEJhZ2Fza2FyYS1Vc2VyYm90"> <img 
 src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 <p align="center"><a href="https://t.me/string_bagasbot"><img src="https://img.shields.io/badge/Generate%20String%20Session-blue?style=for-the-flat&logo=telegram" width="210" height"34.45" /</a></p>
