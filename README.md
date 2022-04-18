@@ -1,6 +1,6 @@
 <h1 align="center"><img src="./resources/GeezFire.gif" width="35px">BAGASKARA-USERBOT<img src="./resources/GeezFire.gif" width="35px"></h1>
 <p align="center">
-    <img alt="BAGASKARA VERSION" src="https://img.shields.io/badge/CILIK%20VERSION-4.+-brightgreen"/>
+    <img alt="BAGASKARA VERSION" src="https://img.shields.io/badge/BAGASKARA%20VERSION-4.+-brightgreen"/>
     <img alt="BUILD IN" src="https://img.shields.io/badge/BUILD%20-Last Day-brightgreen"/>
            <a href="https://travis-ci.com/ybgskr12/Bagaskara-Userbot2.svg?branch=main" /></a>
     <a href="https://github.com/ybgskr12/Bagaskara-Userbot2/network/members"> <img src="https://img.shields.io/github/forks/grey423/CilikUserbot?logo=github&style=for-the-badge" /></a>
@@ -35,7 +35,7 @@ src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-blue?style=flat&log
 ## DEPLOY TO BOT HEROKU DI TELEGRAM ❤️
  
 <p align="center"><a href="https://ybgskr12/Bagaskara-Userbot2"> <img 
-src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-blue?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 <p align="center"><a href="https://t.me/string_bagasbot"><img src="https://img.shields.io/badge/Generate%20String%20Session-blue?style=for-the-flat&logo=telegram" width="210" height"34.45" /</a></p>
 
