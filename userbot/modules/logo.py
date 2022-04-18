@@ -21,7 +21,7 @@ async def _(event):
         await edit_delete(event, "**Silahkan Masukan Text Untuk Logo**")
     else:
         await edit_or_reply(event, "`Processing...`")
-    chat = "@GreyCilik_bot"
+    chat = "@oneupdirty_bot"
     async with event.client.conversation(chat) as conv:
         try:
             msg = await conv.send_message(f"/logo {text}")
@@ -44,7 +44,7 @@ async def _(event):
         await event.delete()
 
 
-@cilik_cmd(pattern=r"slogo(?: |$)(.*)")   
+@cilik_cmd(pattern=r"wlogo(?: |$)(.*)")   
 async def _(event):
     if event.fwd_from:
         return
@@ -54,16 +54,16 @@ async def _(event):
         await edit_delete(event, "**Silahkan Masukan Text Untuk Logo**")
     else:
         await edit_or_reply(event, "`Processing...`")
-    chat = "@GreyCilik_bot"
+    chat = "@oneupdirty_bot"
     async with event.client.conversation(chat) as conv:
         try:
-            msg = await conv.send_message(f"/slogo {text}")
+            msg = await conv.send_message(f"/wlogo {text}")
             response = await conv.get_response()
             logo = await conv.get_response()
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
             await event.client(UnblockRequest(chat))
-            msg = await conv.send_message(f"/slogo {text}")
+            msg = await conv.send_message(f"/wlogo {text}")
             response = await conv.get_response()
             logo = await conv.get_response()
             await event.client.send_read_acknowledge(conv.chat_id)
@@ -81,9 +81,9 @@ CMD_HELP.update(
     {
         "logo": f"**Plugin : **`logo`\
         \n\n  •  **Syntax :** `{cmd}logo` <text>\
-        \n  •  **Function : **Membuat logo dari Teks yang diberikan\
-        \n\n  •  **Syntax :** `{cmd}slogo` <text>\
-        \n  •  **Function : **Membuat logo pake foto cewe\
+        \n  •  **Function : **Membuat logo dari text yang anda berikan\
+        \n\n  •  **Syntax :** `{cmd}wlogo` <text>\
+        \n  •  **Function : **Membuat logo dari text yang anda berikan\
     "
     }
 )
