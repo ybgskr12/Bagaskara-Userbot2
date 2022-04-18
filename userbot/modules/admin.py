@@ -378,7 +378,7 @@ async def gspider(gspdr):
     if user.id in DEVS:
         return await cilik.edit("**Gagal Global Mute, Dia Adalah Pembuat Saya 🤪**")
     if user.id in WHITELIST:
-        return await cilik.edit("**Gagal Mute, dia adalah admin @SharingUserbot 🤪**")
+        return await cilik.edit("**Gagal Mute, dia adalah admin @allfucek 🤪**")
     await cilik.edit("**Berhasil Membisukan Pengguna!**")
     if gmute(user.id) is False:
         await edit_delete(gspdr, "**ERROR! Pengguna Sudah Dibisukan.**")
