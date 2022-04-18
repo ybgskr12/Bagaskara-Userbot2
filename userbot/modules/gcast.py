@@ -28,7 +28,34 @@ while 0 < 6:
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        GCAST_BLACKLIST = [-1001687155877, -1001473548283]
+        GCAST_BLACKLIST = [
+    -1001473548283,  # SharingUserbot
+    -1001433238829,  # TedeSupport
+    -1001476936696,  # AnosSupport
+    -1001327032795,  # UltroidSupport
+    -1001294181499,  # UserBotIndo
+    -1001419516987,  # VeezSupportGroup
+    -1001459812644,  # GeezSupportGroup
+    -1001296934585,  # X-PROJECT BOT
+    -1001481357570,  # UsergeOnTopic
+    -1001459701099,  # CatUserbotSupport
+    -1001109837870,  # TelegramBotIndonesia
+    -1001752592753,  # Skyzusupport
+    -1001273141346,  # Remix Support Vegeta
+    -1001795125065,  # Bagaskara Support
+    -1001687155877,  # Grey Cilik Support
+    -1001692751821,  # Ram Support
+    -1001699144606,  # Kasta Support
+    -1001716001073,  # Skyla Support
+    -1001554560763,  # Vegeta Support
+    -1001578091827,  # Prime Support
+    -1001380293847,  # Nasty Support
+    -1001683749664,  # Xa Support
+    -1001664518224,  # Joni Support
+    -1001489233533,  # Rumah Kitaro
+    -1001538752127,  # Abing Support
+    -1001347414136,  # Musikku Support
+]
         break
     GCAST_BLACKLIST = _GCAST_BLACKLIST.json()
     break
