@@ -57,7 +57,7 @@ async def shutdown_bot(event):
             "**#SHUTDOWN** \n"
             "**Bagaskara Userbot** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await edit_or_reply(event, "**Cilik Userbot Berhasil di matikan!**")
+    await edit_or_reply(event, "**Bagaskara Userbot Berhasil di matikan!**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
@@ -71,7 +71,7 @@ async def restart_bot(event):
     await edit_or_reply(event, "**Bagaskara Userbot Berhasil di Restart**")
     if BOTLOG_CHATID:
         await event.client.send_message(
-            BOTLOG_CHATID, "#RESTART \n" "**Cilik Userbot Berhasil Di Restart**"
+            BOTLOG_CHATID, "#RESTART \n" "**Bagaskara Userbot Berhasil Di Restart**"
         )
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
@@ -109,7 +109,7 @@ async def repo_is_here(event):
         "𝗥𝗲𝗽𝗼 🇮🇩\n"
         "╰⎆ [ʙᴀɢᴀsᴋᴀʀᴀ-ᴜsᴇʀʙᴏᴛ​](https://github.com/ybgskr12/Bagaskara-Userbot2)\n"
         "✪ **Oᴡɴᴇʀ​** ⎆ [ʙᴧɢᴧsҡᴧʀᴧ](https://t.me/ybgskr)\n"
-        "✪ **Sᴜᴘᴘᴏʀᴛ**​ ⎆ [groups](https://t.me/allfucek )\n"
+        "✪ **Sᴜᴘᴘᴏʀᴛ**​ ⎆ [groups](https://t.me/allfucek)\n"
     )
                
 
