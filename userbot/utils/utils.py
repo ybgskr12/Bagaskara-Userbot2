@@ -238,7 +238,7 @@ async def autobot():
                  anonymous=False,
                  manage_call=True,
              )
-        await bot(EditAdminRequest(int(BOTLOG_CHATID), f"@{username}", rights, "ᴀꜱꜱɪꜱᴛᴀɴᴛ ʙᴀɢᴀsᴋᴀʀᴀ"))
+        await bot(EditAdminRequest(int(BOTLOG_CHATID), f"@{username}", rights, "ᴀꜱꜱɪꜱᴛᴀɴᴛ"))
         ppk = "userbot/resources/photo1640728489.jpeg"
         await bot(EditPhotoRequest(BOTLOG_CHATID, await bot.upload_file(ppk)))
         heroku_var["BOT_TOKEN"] = token
