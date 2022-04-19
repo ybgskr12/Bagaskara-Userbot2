@@ -26,10 +26,6 @@ Bot ini dimaksudkan untuk bersenang-senang sekaligus membantu Anda
 mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
-## DEPLOY TO WEB HEROKU 💜
- 
-<p align="center"><a href="https://github.com/ybgskr12/Bagaskara-Userbot2"> <img 
-src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-blue?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 
 ## DEPLOY TO BOT HEROKU DI TELEGRAM ❤️
