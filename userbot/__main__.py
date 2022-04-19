@@ -61,7 +61,7 @@ async def cilik_userbot_on():
             await bot.send_file(
                 BOTLOG_CHATID,
                 ALIVE_LOGO,
-                caption=f"🔥 **Bagaskara Userbot Berhasil Diaktifkan**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 1.1 @Bagaskara-Userbot\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @loveisfuckedup ",
+                caption=f"🔥 **Bagaskara Userbot Berhasil Diaktifkan**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 1.1 @Bagaskara_Userbot\n➠ **Ketik** `.ping` **Untuk Mengecheck Bot**\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @loveisfuckedup ",
             )
     except Exception as e:
         LOGS.info(str(e))
