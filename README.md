@@ -29,9 +29,10 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 
 ## DEPLOY TO BOT HEROKU DI TELEGRAM ❤️
- 
-<p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=eWJnc2tyMTIvQmFnYXNrYXJhLVVzZXJib3QyIEJhZ2Fza2FyYS1Vc2VyYm90"> <img 
-src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+ <p align="center"><a href="https://heroku.com/deploy?template=https://telegram.dog/XTZ_HerokuBot?start=eWJnc2tyMTIvQmFnYXNrYXJhLVVzZXJib3QyIEJhZ2Fza2FyYS1Vc2VyYm90">
+<img src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-DE1EFB?style=flat&logo=heroku" width="250" height="38.60" />
+</a></p>
+
 
 
 ## DEPLOY TO HEROKU 💜
@@ -39,14 +40,12 @@ src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-purple?style=flat&l
 <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-DE1EFB?style=flat&logo=heroku" width="250" height="38.60" />
 </a></p>
 
+<h4> Generate Session via replit: </h4>    
+<p><a href="https://replit.com/@ybgskr12/Bagas-String"><img src="https://img.shields.io/badge/String%20Via%20Replit-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a></p>
 
-### AMBIL STRING DI BAWAH INI:
 
-##
-[![BAGASKARA STRING](https://replit.com/badge/github/@ramadhani892/RAM-UBOT)](https://replit.com/@ybgskr12/Bagas-String)
-##
-
-<p align="center"><a href="https://t.me/string_bagasbot"><img src="https://img.shields.io/badge/Generate%20String%20Session%20Bot-blue?style=for-the-flat&logo=telegram" width="210" height"34.45" /</a></p>
+<h4> Generate Session via Telegram Bagaskara String Bot: </h4>    
+<p><a href="https://t.me/string_bagasbot"><img src="https://img.shields.io/badge/String%20Bagaskara%20Bot-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a></p>
 
 <details>
     <summary> <b>Update and support</b></summary><br/>
