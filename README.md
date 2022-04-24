@@ -32,7 +32,14 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
  
 <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=eWJnc2tyMTIvQmFnYXNrYXJhLVVzZXJib3QyIEJhZ2Fza2FyYS1Vc2VyYm90"> <img 
 src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
-    
+
+
+## DEPLOY TO HEROKU 💜
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ybgskr12/Bagaskara-Userbot2">
+<img src="https://img.shields.io/badge/Deploy%20To%20Heroku-DE1EFB?style=flat&logo=heroku" width="250" height="38.60" />
+</a></p>
+
+
 ### AMBIL STRING DI BAWAH INI:
 
 ##
