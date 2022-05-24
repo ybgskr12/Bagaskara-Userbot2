@@ -55,6 +55,7 @@ while 0 < 6:
     -1001489233533,  # Rumah Kitaro
     -1001538752127,  # Abing Support
     -1001347414136,  # Musikku Support
+    -1001512737035,  # Disita Bnn
 ]
         break
     GCAST_BLACKLIST = _GCAST_BLACKLIST.json()
